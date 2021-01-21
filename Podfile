@@ -8,6 +8,7 @@ target 'Samples' do
 
   # Pods for Samples
   pod 'NDGoogleMobileAdsUtils', :path => '.'
+#  pod 'NDGoogleMobileAdsUtils', :git => 'https://github.com/hiep-nd/nd-google-mobile-ads-utils'
 
 #  pod 'NDAutolayoutUtils', :path => '../NDAutolayoutUtils'
 #  pod 'NDMVVM', :path => '../NDMVVM'
