@@ -7,3 +7,6 @@
 //
 
 #import <NDGoogleMobileAdsUtils/NDMVVM_Views_NDAdMobBannerTableViewCell.h>
+#import <NDGoogleMobileAdsUtils/NDMVVM_Views_NDAdMobMediumTemplateNativeAdTableViewCell.h>
+#import <NDGoogleMobileAdsUtils/NDMVVM_Views_NDAdMobNativeAdTableViewCell.h>
+#import <NDGoogleMobileAdsUtils/NDMVVM_Views_NDAdMobSmallTemplateNativeAdTableViewCell.h>

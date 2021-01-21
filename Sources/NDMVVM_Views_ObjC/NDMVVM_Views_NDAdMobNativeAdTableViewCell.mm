@@ -55,15 +55,3 @@
 NDView_RViewModel_Default_Impl(NDAdMobAdUnitItemViewModel);
 
 @end
-
-#import <NDGoogleMobileAdsUtils/GADTSmallTemplateView.h>
-
-@implementation NDAdMobSmallTemplateNativeAdTableViewCell
-
-- (__kindof NDAdMobNativeAdView*)createNativeAdView {
-  auto view = [[NDAdMobNativeAdView alloc] init];
-  view.unifiedNativeAdView = [[GADTSmallTemplateView alloc] init];
-  return view;
-}
-
-@end

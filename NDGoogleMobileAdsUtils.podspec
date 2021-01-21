@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NDGoogleMobileAdsUtils"
-  s.version      = "0.1"
+  s.version      = "0.2"
   s.summary      = "A utility framework for GoogleMobileAds."
   s.description  = <<-DESC
   NDGoogleMobileAdsUtils is a small framework that support GoogleMobileAds.
