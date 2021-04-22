@@ -15,33 +15,33 @@
 
 using namespace nd::objc;
 
-@interface NDAdMobNativeAdView () <GADUnifiedNativeAdLoaderDelegate,
-                                   GADUnifiedNativeAdDelegate>
+@interface NDAdMobNativeAdView () <GADNativeAdLoaderDelegate,
+                                   GADNativeAdDelegate>
 @end
 
 @implementation NDAdMobNativeAdView {
   GADAdLoader* _adLoader;
-  GADUnifiedNativeAd* _nativeAd;
+  GADNativeAd* _nativeAd;
   NSLayoutConstraint* _widthConstraint;
   NSLayoutConstraint* _heightConstraint;
 }
 
-- (void)setUnifiedNativeAdView:(GADUnifiedNativeAdView*)unifiedNativeAdView {
-  if (_unifiedNativeAdView == unifiedNativeAdView) {
+- (void)setNativeAdView:(GADNativeAdView*)nativeAdView {
+  if (_nativeAdView == nativeAdView) {
     return;
   }
 
-  [_unifiedNativeAdView removeFromSuperview];
+  [_nativeAdView removeFromSuperview];
   _widthConstraint.active = NO;
   _heightConstraint.active = NO;
 
-  _unifiedNativeAdView = unifiedNativeAdView;
-  _widthConstraint = [_unifiedNativeAdView.widthAnchor
+  _nativeAdView = nativeAdView;
+  _widthConstraint = [_nativeAdView.widthAnchor
       constraintEqualToConstant:self.adSize.size.width];
-  _heightConstraint = [_unifiedNativeAdView.heightAnchor
+  _heightConstraint = [_nativeAdView.heightAnchor
       constraintEqualToConstant:self.adSize.size.height];
-  if (_unifiedNativeAdView) {
-    [self nd_wrapItem:_unifiedNativeAdView
+  if (_nativeAdView) {
+    [self nd_wrapItem:_nativeAdView
         visualConstraints:@[
           @"V:[safeArea_center][item_center]",
           @"V:[safeArea_top]->=0-[item]->=0-[safeArea_bottom]",
@@ -50,9 +50,9 @@ using namespace nd::objc;
         ]];
     _widthConstraint.active = YES;
     _heightConstraint.active = YES;
-    _unifiedNativeAdView.nativeAd = _nativeAd;
-    _unifiedNativeAdView.hidden = (_nativeAd == nil);
-    [self sendSubviewToBack:_unifiedNativeAdView];
+    _nativeAdView.nativeAd = _nativeAd;
+    _nativeAdView.hidden = (_nativeAd == nil);
+    [self sendSubviewToBack:_nativeAdView];
   }
 }
 
@@ -119,9 +119,9 @@ using namespace nd::objc;
 @synthesize debugLabel = _debugLabel;
 #endif
 
-// MARK:- GADUnifiedNativeAdLoaderDelegate
+// MARK:- GADNativeAdLoaderDelegate
 - (void)adLoader:(GADAdLoader*)adLoader
-    didReceiveUnifiedNativeAd:(GADUnifiedNativeAd*)nativeAd {
+    didReceiveNativeAd:(GADNativeAd*)nativeAd {
   self.nativeAd = nativeAd;
 }
 
@@ -133,7 +133,7 @@ using namespace nd::objc;
 }
 
 - (void)adLoader:(nonnull GADAdLoader*)adLoader
-    didFailToReceiveAdWithError:(nonnull GADRequestError*)error {
+    didFailToReceiveAdWithError:(nonnull NSError*)error {
   if (adLoader != _adLoader) {
     return;
   }
@@ -151,7 +151,7 @@ using namespace nd::objc;
   _adLoader =
       [[GADAdLoader alloc] initWithAdUnitID:self.adUnitID
                          rootViewController:self.rootViewController
-                                    adTypes:@[ kGADAdLoaderAdTypeUnifiedNative ]
+                                    adTypes:@[ kGADAdLoaderAdTypeNative ]
                                     options:nil];
   _adLoader.delegate = self;
 #if TARGET_IPHONE_SIMULATOR
@@ -162,15 +162,15 @@ using namespace nd::objc;
   [_adLoader loadRequest:GADRequest.request];
 }
 
-- (void)setNativeAd:(GADUnifiedNativeAd*)nativeAd {
+- (void)setNativeAd:(GADNativeAd*)nativeAd {
   if (_nativeAd == nativeAd) {
     return;
     ;
   }
 
   _nativeAd = nativeAd;
-  _unifiedNativeAdView.nativeAd = _nativeAd;
-  _unifiedNativeAdView.hidden = (_nativeAd == nil);
+  _nativeAdView.nativeAd = _nativeAd;
+  _nativeAdView.hidden = (_nativeAd == nil);
 }
 
 @end

@@ -1,77 +1,77 @@
 PODS:
-  - Google-Mobile-Ads-SDK (7.69.0):
+  - Google-Mobile-Ads-SDK (8.3.0):
     - GoogleAppMeasurement (~> 7.0)
-    - GoogleUserMessagingPlatform (~> 1.1)
-  - GoogleAppMeasurement (7.4.0):
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleAppMeasurement (7.10.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
     - GoogleUtilities/MethodSwizzler (~> 7.0)
     - GoogleUtilities/Network (~> 7.0)
     - "GoogleUtilities/NSData+zlib (~> 7.0)"
-    - nanopb (~> 2.30907.0)
-  - GoogleUserMessagingPlatform (1.4.0)
-  - GoogleUtilities/AppDelegateSwizzler (7.2.0):
+    - nanopb (~> 2.30908.0)
+  - GoogleUserMessagingPlatform (2.0.0)
+  - GoogleUtilities/AppDelegateSwizzler (7.3.1):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (7.2.0):
+  - GoogleUtilities/Environment (7.3.1):
     - PromisesObjC (~> 1.2)
-  - GoogleUtilities/Logger (7.2.0):
+  - GoogleUtilities/Logger (7.3.1):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (7.2.0):
+  - GoogleUtilities/MethodSwizzler (7.3.1):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (7.2.0):
+  - GoogleUtilities/Network (7.3.1):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (7.2.0)"
-  - GoogleUtilities/Reachability (7.2.0):
+  - "GoogleUtilities/NSData+zlib (7.3.1)"
+  - GoogleUtilities/Reachability (7.3.1):
     - GoogleUtilities/Logger
-  - nanopb (2.30907.0):
-    - nanopb/decode (= 2.30907.0)
-    - nanopb/encode (= 2.30907.0)
-  - nanopb/decode (2.30907.0)
-  - nanopb/encode (2.30907.0)
+  - nanopb (2.30908.0):
+    - nanopb/decode (= 2.30908.0)
+    - nanopb/encode (= 2.30908.0)
+  - nanopb/decode (2.30908.0)
+  - nanopb/encode (2.30908.0)
   - NDAutolayoutUtils/Core (0.0.7):
     - NDLog (~> 0.0.6)
     - NDUtils/Foundation (~> 0.0.5)
   - NDAutolayoutUtils/ObjC (0.0.7):
     - NDAutolayoutUtils/Core
-  - NDGoogleMobileAdsUtils (0.2):
-    - NDGoogleMobileAdsUtils/Swift (= 0.2)
-  - NDGoogleMobileAdsUtils/Core_ObjC (0.2):
-    - Google-Mobile-Ads-SDK (~> 7.0)
+  - NDGoogleMobileAdsUtils (0.3):
+    - NDGoogleMobileAdsUtils/Swift (= 0.3)
+  - NDGoogleMobileAdsUtils/Core_ObjC (0.3):
+    - Google-Mobile-Ads-SDK (~> 8)
     - NDAutolayoutUtils/ObjC (~> 0.0.7.0)
     - NDManualObjects/ObjC (~> 0.0.8.3)
     - NDUtils/UIKit_ObjC (~> 0.0.5.0)
-  - NDGoogleMobileAdsUtils/Core_Swift (0.2):
+  - NDGoogleMobileAdsUtils/Core_Swift (0.3):
     - NDGoogleMobileAdsUtils/Core_ObjC
-  - NDGoogleMobileAdsUtils/googleads-mobile-ios-native-templates (0.2):
-    - Google-Mobile-Ads-SDK (~> 7.0)
+  - NDGoogleMobileAdsUtils/googleads-mobile-ios-native-templates (0.3):
+    - Google-Mobile-Ads-SDK (~> 8)
     - NDUtils/Foundation_ObjC (~> 0.0.5.0)
-  - NDGoogleMobileAdsUtils/NDMVVM_Abstracts_ObjC (0.2):
-    - Google-Mobile-Ads-SDK (~> 7.0)
+  - NDGoogleMobileAdsUtils/NDMVVM_Abstracts_ObjC (0.3):
+    - Google-Mobile-Ads-SDK (~> 8)
     - NDMVVM/Abstracts_ObjC (~> 0.0.4.2)
-  - NDGoogleMobileAdsUtils/NDMVVM_Abstracts_Swift (0.2):
+  - NDGoogleMobileAdsUtils/NDMVVM_Abstracts_Swift (0.3):
     - NDGoogleMobileAdsUtils/NDMVVM_Abstracts_ObjC
-  - NDGoogleMobileAdsUtils/NDMVVM_Swift (0.2):
+  - NDGoogleMobileAdsUtils/NDMVVM_Swift (0.3):
     - NDGoogleMobileAdsUtils/NDMVVM_Abstracts_Swift
     - NDGoogleMobileAdsUtils/NDMVVM_ViewModels_Swift
     - NDGoogleMobileAdsUtils/NDMVVM_Views_Swift
-  - NDGoogleMobileAdsUtils/NDMVVM_ViewModels_ObjC (0.2):
-    - Google-Mobile-Ads-SDK (~> 7.0)
+  - NDGoogleMobileAdsUtils/NDMVVM_ViewModels_ObjC (0.3):
+    - Google-Mobile-Ads-SDK (~> 8)
     - NDGoogleMobileAdsUtils/NDMVVM_Abstracts_ObjC
     - NDMVVM/ViewModels_ObjC (~> 0.0.4.2)
-  - NDGoogleMobileAdsUtils/NDMVVM_ViewModels_Swift (0.2):
+  - NDGoogleMobileAdsUtils/NDMVVM_ViewModels_Swift (0.3):
     - NDGoogleMobileAdsUtils/NDMVVM_ViewModels_ObjC
-  - NDGoogleMobileAdsUtils/NDMVVM_Views_ObjC (0.2):
-    - Google-Mobile-Ads-SDK (~> 7.0)
+  - NDGoogleMobileAdsUtils/NDMVVM_Views_ObjC (0.3):
+    - Google-Mobile-Ads-SDK (~> 8)
     - NDGoogleMobileAdsUtils/Core_ObjC
     - NDGoogleMobileAdsUtils/googleads-mobile-ios-native-templates
     - NDGoogleMobileAdsUtils/NDMVVM_Abstracts_ObjC
     - NDMVVM/Views_ObjC (~> 0.0.4.2)
-  - NDGoogleMobileAdsUtils/NDMVVM_Views_Swift (0.2):
+  - NDGoogleMobileAdsUtils/NDMVVM_Views_Swift (0.3):
     - NDGoogleMobileAdsUtils/NDMVVM_Views_ObjC
-  - NDGoogleMobileAdsUtils/Swift (0.2):
+  - NDGoogleMobileAdsUtils/Swift (0.3):
     - NDGoogleMobileAdsUtils/Core_Swift
     - NDGoogleMobileAdsUtils/googleads-mobile-ios-native-templates
     - NDGoogleMobileAdsUtils/NDMVVM_Swift
@@ -84,20 +84,20 @@ PODS:
     - NDLog/Core_ObjC
   - NDLog/Swift (0.0.6.3):
     - NDLog/Core_Swift
-  - NDManualObjects/Abstracts_ObjC (0.0.8.3):
+  - NDManualObjects/Abstracts_ObjC (0.0.8.4):
     - NDLog/ObjC (~> 0.0.6)
     - NDManualObjects/Core_ObjC
     - NDUtils/objc_ObjC (~> 0.0.5)
-  - NDManualObjects/Core_ObjC (0.0.8.3):
+  - NDManualObjects/Core_ObjC (0.0.8.4):
     - NDLog/ObjC (~> 0.0.6)
     - NDUtils/objc_ObjC (~> 0.0.5)
-  - NDManualObjects/ObjC (0.0.8.3):
+  - NDManualObjects/ObjC (0.0.8.4):
     - NDLog/ObjC (~> 0.0.6)
     - NDManualObjects/Abstracts_ObjC
     - NDManualObjects/Core_ObjC
     - NDManualObjects/Objects_ObjC
     - NDUtils/objc_ObjC (~> 0.0.5)
-  - NDManualObjects/Objects_ObjC (0.0.8.3):
+  - NDManualObjects/Objects_ObjC (0.0.8.4):
     - NDLog/ObjC (~> 0.0.6)
     - NDManualObjects/Abstracts_ObjC
     - NDUtils/objc_ObjC (~> 0.0.5)
@@ -140,7 +140,7 @@ PODS:
   - PromisesObjC (1.2.12)
 
 DEPENDENCIES:
-  - NDGoogleMobileAdsUtils (from `https://github.com/hiep-nd/nd-google-mobile-ads-utils`)
+  - NDGoogleMobileAdsUtils (from `.`)
 
 SPEC REPOS:
   trunk:
@@ -158,27 +158,22 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   NDGoogleMobileAdsUtils:
-    :git: https://github.com/hiep-nd/nd-google-mobile-ads-utils
-
-CHECKOUT OPTIONS:
-  NDGoogleMobileAdsUtils:
-    :commit: 9fc9a5aa876240c48f303213780d2bc40cd00190
-    :git: https://github.com/hiep-nd/nd-google-mobile-ads-utils
+    :path: "."
 
 SPEC CHECKSUMS:
-  Google-Mobile-Ads-SDK: 2f288748a42920d1c744946a460896a95b0e9110
-  GoogleAppMeasurement: 688d7f00e2894d9e13823ed9a028b13b993bc277
-  GoogleUserMessagingPlatform: b168e8c46cd8f92aa3e34b584c4ca78a411ce367
-  GoogleUtilities: d866834472f1324d080496bc67ab3ce5d0d46027
-  nanopb: 59221d7f958fb711001e6a449489542d92ae113e
+  Google-Mobile-Ads-SDK: c14f5a63db1414b4ca0ee1539c9f3d700ace96c2
+  GoogleAppMeasurement: 1c863b1161fc3c8cf614a7460d1be6a7c262aab3
+  GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
+  GoogleUtilities: e1d9ed4e544fc32a93e00e721400cbc3f377200d
+  nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   NDAutolayoutUtils: 82fc48d4cba9e7a0d1dfce819cc36e74ed60514d
-  NDGoogleMobileAdsUtils: 26d273f43e90b1b7ee830449e0f98353a8fcba1d
+  NDGoogleMobileAdsUtils: 5f4d25e465c827a77efdb14265b76bc37ca42ca0
   NDLog: 783141ece6ac6a398262145b59cc7c27b80ab58d
-  NDManualObjects: fab899ecf8b9ed7f4bee0e5b289b9e7dc166e318
+  NDManualObjects: 0adbd5d5c02a2f07ff675906a59f52114df4fd6c
   NDMVVM: 16382ff66fb0a15e38b862b0db3a2cb80e4d128e
   NDUtils: fc37ba3df6e1af1aa014df7f70c7620bb7cb330b
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: 1f797fffcf07a7749b6c315fb8c36d68c01c6780
+PODFILE CHECKSUM: 6cea5a778e8d75e8d5db98fda7339db208d605ee
 
 COCOAPODS: 1.10.1

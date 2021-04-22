@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     adView.adUnitID = "ca-app-pub-3940256099942544/3986624511"
     adView.adSize = GADAdSizeFromCGSize(.init(width: 320, height: 150))
     adView.rootViewController = self
-    adView.unifiedNativeAdView = GADTSmallTemplateView()
+    adView.nativeAdView = GADTSmallTemplateView()
     view.nd_fill(with: adView)
   }
 }

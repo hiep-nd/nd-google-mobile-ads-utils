@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NDGoogleMobileAdsUtils"
-  s.version      = "0.2"
+  s.version      = "0.3"
   s.summary      = "A utility framework for GoogleMobileAds."
   s.description  = <<-DESC
   NDGoogleMobileAdsUtils is a small framework that support GoogleMobileAds.
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/hiep-nd/nd-google-mobile-ads-utils.git"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Nguyen Duc Hiep" => "hiep.nd@gmail.com" }
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 #  s.tvos.deployment_target = '9.0'
   s.swift_versions = ['4.0', '5.1', '5.2']
   s.requires_arc   = true
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
     ss.framework = 'Foundation', 'UIKit'
 
-    ss.dependency 'Google-Mobile-Ads-SDK', '~> 7.0'
+    ss.dependency 'Google-Mobile-Ads-SDK', '~> 8'
     ss.dependency 'NDManualObjects/ObjC', '~> 0.0.8.3'
     ss.dependency 'NDAutolayoutUtils/ObjC', '~> 0.0.7.0'
     ss.dependency 'NDUtils/UIKit_ObjC', '~> 0.0.5.0'
@@ -41,7 +41,7 @@ Pod::Spec.new do |s|
 
     ss.framework = 'Foundation', 'UIKit'
 
-    ss.dependency 'Google-Mobile-Ads-SDK', '~> 7.0'
+    ss.dependency 'Google-Mobile-Ads-SDK', '~> 8'
     ss.dependency 'NDUtils/Foundation_ObjC', '~> 0.0.5.0'
   end
 
@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
 
     ss.framework = 'Foundation'
 
-    ss.dependency 'Google-Mobile-Ads-SDK', '~> 7.0'
+    ss.dependency 'Google-Mobile-Ads-SDK', '~> 8'
     ss.dependency 'NDMVVM/Abstracts_ObjC', '~> 0.0.4.2'
   end
 
@@ -67,7 +67,7 @@ Pod::Spec.new do |s|
 
     ss.framework = 'Foundation'
 
-    ss.dependency 'Google-Mobile-Ads-SDK', '~> 7.0'
+    ss.dependency 'Google-Mobile-Ads-SDK', '~> 8'
     ss.dependency 'NDGoogleMobileAdsUtils/NDMVVM_Abstracts_ObjC'
     ss.dependency 'NDMVVM/ViewModels_ObjC', '~> 0.0.4.2'
   end
@@ -85,7 +85,7 @@ Pod::Spec.new do |s|
 
     ss.framework = 'Foundation', 'UIKit'
 
-    ss.dependency 'Google-Mobile-Ads-SDK', '~> 7.0'
+    ss.dependency 'Google-Mobile-Ads-SDK', '~> 8'
     ss.dependency 'NDGoogleMobileAdsUtils/NDMVVM_Abstracts_ObjC'
     ss.dependency 'NDGoogleMobileAdsUtils/Core_ObjC'
     ss.dependency 'NDGoogleMobileAdsUtils/googleads-mobile-ios-native-templates'

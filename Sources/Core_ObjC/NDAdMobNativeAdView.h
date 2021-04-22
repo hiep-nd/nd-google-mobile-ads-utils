@@ -13,7 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NDAdMobNativeAdView : NDManualView <NDAdMobAdView>
-@property(nonatomic, strong) GADUnifiedNativeAdView* unifiedNativeAdView;
+@property(nonatomic, strong) GADNativeAdView* nativeAdView;
 @end
 
 NS_ASSUME_NONNULL_END

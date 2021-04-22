@@ -15,7 +15,7 @@
 
 - (__kindof NDAdMobNativeAdView*)createNativeAdView {
   auto view = [[NDAdMobNativeAdView alloc] init];
-  view.unifiedNativeAdView = [[GADTSmallTemplateView alloc] init];
+  view.nativeAdView = [[GADTSmallTemplateView alloc] init];
   return view;
 }
 

@@ -111,7 +111,7 @@ using namespace nd::objc;
 }
 
 - (void)adView:(GADBannerView*)bannerView
-    didFailToReceiveAdWithError:(GADRequestError*)error {
+    didFailToReceiveAdWithError:(NSError*)error {
   if (bannerView != self.bannerView) {
     return;
   }
